@@ -117,7 +117,7 @@ export default function IndexPage() {
             </AnimatedText>
             <AnimatedText delay={0.8}>
               <Link
-                href={"https://drive.google.com/file/d/13gVtNDDOAWvQAKf5WTkk8g6XOpeztRo8/view?usp=sharing"}
+                href={"https://drive.google.com/file/d/1_LJ72wk5798A8-XmjJWTOBMWRpV62pmm/view?usp=sharing"}
                 rel="noreferrer"
                 className={cn(
                   buttonVariants({
