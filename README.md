@@ -10,11 +10,7 @@
 - **Modern Tech Stack**: Next.js 14, TypeScript, Tailwind CSS, and shadcn/ui
 - **Animations**: Subtle animations for engaging user experience
 
-## 🚀 Demo
 
-View the live demo at [https://nArun.xyz/](https://nArun.xyz)
-
-https://github.com/Arun/minimal-next-portfolio/assets/82203888/f93bf5ca-c2bd-4fe5-a413-1050ebf6cf78
 
 ## 🛠️ Tech Stack
 
