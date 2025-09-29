@@ -22,13 +22,13 @@ export const SocialLinks: SocialInterface[] = [
   },
   {
     name: "Twitter",
-    username: "@Arun",
+    username: "@ArrunJDR",
     icon: Icons.xLogo,
     link: "https://x.com/ArrunJDR",
   },
   {
     name: "Gmail",
-    username: "Arun.Arun02",
+    username: "Arun",
     icon: Icons.gmail,
     link: "mailto:arunjdev26@gmail.com",
   },
