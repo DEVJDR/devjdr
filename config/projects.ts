@@ -122,51 +122,108 @@ export const Projects: ProjectInterface[] = [
     ],
   },
 }
-,
-{
-  id: "asd-adhd-comparison",
-  companyName: "Final Year Project",
-  type: "Professional",
-  category: ["ML", "Deep Learning", "Data Science"],
+, {
+  id: "runit-code-editor",
+  companyName: "RunIt",
+  type: "Personal",
+  category: ["Web App", "Coding Tools", "Productivity"],
   shortDescription:
-    "Built a deep learning model to compare cognitive patterns in ASD vs ADHD, enhancing diagnostic support.",
-  githubLink: "https://github.com/yourrepo/asd-adhd",
-  techStack: ["Python", "TensorFlow", "Pandas", "Matplotlib"],
-  startDate: new Date("2023-07-01"),
-  endDate: new Date("2024-04-01"),
-  companyLogoImg: "/projects/asd-adhd/logo.jpg",
+    "An online code editor supporting 10+ languages with real-time output, custom input, and a VS Code-inspired interface.",
+  githubLink: "https://github.com/DEVJDR/reactcodeditor",
+  websiteLink: "https://reactcodeditor.vercel.app",
+  techStack: ["React", "Monaco Editor", "Tailwind CSS", "Judge0 API"],
+  startDate: new Date("2024-03-01"),
+  endDate: new Date("2024-04-15"),
+  companyLogoImg: "/projects/runit/logo.png",
   pagesInfoArr: [
     {
-      title: "Model Training & Evaluation",
-      description: "Implemented CNNs/LSTMs to classify and analyze patterns",
-      imgArr: ["/projects/asd-adhd/model_training.png"],
+      title: "Multi-Language Support",
+      description:
+        "Integrated Judge0 API to compile and execute code in 10+ programming languages directly in the browser.",
+      imgArr: ["/projects/runit/multi_language.png"],
     },
     {
-      title: "Data Visualization",
-      description: "Exploratory data analysis and feature distribution graphs",
-      imgArr: ["/projects/asd-adhd/data_viz.png"],
+      title: "VS Code-Inspired UI",
+      description:
+        "Built an intuitive interface with Monaco Editor, offering syntax highlighting and a familiar coding experience.",
+      imgArr: ["/projects/runit/logo.png"],
     },
     {
-      title: "Results & Accuracy",
-      description: "Achieved significant accuracy in differentiating ASD vs ADHD",
-      imgArr: ["/projects/asd-adhd/results.png"],
+      title: "Real-Time Execution",
+      description:
+        "Implemented live code execution with input/output panels for smooth and responsive feedback.",
+      imgArr: ["/projects/runit/realtime_output.png"],
     },
   ],
   descriptionDetails: {
     paragraphs: [
-      "For my final year project, I developed a deep learning model aimed at distinguishing between Autism Spectrum Disorder (ASD) and Attention Deficit Hyperactivity Disorder (ADHD). This project combined my interests in psychology and technology to address a real-world healthcare challenge.",
-      "I used Python, TensorFlow, and Keras to design CNN/LSTM models that analyzed behavioral and neurocognitive datasets. The system provided insights into overlapping symptoms and helped in identifying distinguishing markers.",
-      "The project not only improved my expertise in AI/ML but also demonstrated how computational approaches can support mental health diagnostics.",
+      "RunIt is a lightweight yet powerful online code editor I built to simplify the process of writing and testing code directly in the browser. The goal was to create a tool that provides the feel of an IDE without the need for setup or installation.",
+      "The project supports 10+ programming languages through Judge0 API integration, while Monaco Editor ensures a polished, VS Code-like experience. Real-time output and custom input panels enhance usability for developers and learners alike.",
+      "Building RunIt allowed me to strengthen my expertise in API integration, real-time data handling, and UI/UX design for developer-centric tools.",
     ],
     bullets: [
-      "Designed and trained deep learning models for ASD vs ADHD classification.",
-      "Performed extensive data cleaning, preprocessing, and visualization.",
-      "Achieved improved accuracy compared to baseline models.",
-      "Integrated psychology domain knowledge into feature selection and interpretation.",
+      "Supports 10+ programming languages with real-time execution.",
+      "Integrated Judge0 API for seamless backend compilation.",
+      "Implemented Monaco Editor for a VS Code-inspired interface.",
+      "Designed responsive UI with Tailwind CSS for accessibility.",
     ],
   },
-}
-,
+},
+
+{
+  "id": "easy-comply",
+  "companyName": "EasyComply",
+  "type": "Professional",
+  category: ["Compliance Check", "Frontend", "Training platform"],
+  "shortDescription":
+    "A QR-based training platform for electronics manufacturing, enabling workers to scan codes for SOP videos, checklists, and auto-logs to streamline onboarding and ensure IATF 16949 compliance.",
+  "githubLink": "https://github.com/DEVJDR/EasyComply", 
+  "websiteLink": "https://easy-comply-five.vercel.app/", 
+  "techStack": ["React Native", "Tailwind CSS", "Supabase", "Cloudinary", "Typescript", "Firebase"],
+  "startDate": new Date("2025-09-01"),
+  "endDate": new Date("2025-12-31"),
+  "companyLogoImg": "/projects/easy-comply/logo.png",
+  "pagesInfoArr": [
+    {
+      title: "Machine Dashboard",
+      "description":
+        "Interactive list of machines with QR-linked SOPs; users select a machine to start training, with locked/unlocked status for phased rollout.",
+      "imgArr": ["/projects/easy-comply/machine_dashboard.png"],
+    },
+    {
+      title: "QR Scan & SOP Video",
+      "description":
+        "Core workflow: Scan QR to trigger bite-sized videos (1-3 mins) for tasks like wave soldering, with multilingual (Hindi/English) support.",
+      "imgArr": ["/projects/easy-comply/qr_scan_sop.png"],
+    },
+    {
+      title: "Checklist Completion",
+      "description":
+        "Digital checklists for pre-op, op, post-op, and safety steps; gamified with progress badges and real-time ticking.",
+      "imgArr": ["/projects/easy-comply/checklist_completion.png"],
+    },
+    {
+      title: "Auto-Log & Export",
+      "description":
+        "Automated training logs for audits (IATF 16949 compliant); export as CSV/Excel for easy reporting and compliance.",
+      "imgArr": ["/projects/easy-comply/auto_log_export.png"],
+    },
+  ],
+  "descriptionDetails": {
+    "paragraphs": [
+      "EasyComply is a mobile-first training platform designed for SMEs and EMS in electronics manufacturing. Inspired by real-world onboarding challenges, it uses QR codes to deliver instant access to SOP videos and interactive checklists, reducing training time from 3 weeks to 1 while ensuring compliance with standards like IATF 16949.",
+      "Built with React Native for cross-platform use, it integrates Supabase for secure data storage and Cloudinary for video hosting. The app supports gamification (badges for completion) and multilingual content to engage semi-skilled workers in factories.",
+      "Currently in pilot phase, targeting 5-10 EMS companies by October 2025, with a focus on ROI like ₹50,000-75,000 annual savings per team through error reduction and audit readiness. This project combines my BTech background in electronics with frontend development to solve practical manufacturing pain points.",
+    ],
+    "bullets": [
+      "QR-driven SOP delivery for on-the-job training in 1-3 minute modules.",
+      "Interactive checklists with gamification for higher engagement (15% retention boost).",
+      "Auto-logging and CSV/Excel exports for seamless IATF 16949 compliance.",
+      "Multilingual support (Hindi/English) and offline access for factory environments.",
+      "Customizable for specific workflows like PCB assembly or wave soldering.",
+    ],
+  },
+},
 {
   id: "kplr-ondc",
   companyName: "KPLR",
@@ -214,50 +271,46 @@ export const Projects: ProjectInterface[] = [
     ],
   },
 },
-  {
-  id: "runit-code-editor",
-  companyName: "RunIt",
-  type: "Personal",
-  category: ["Web App", "Coding Tools", "Productivity"],
+ {
+  id: "asd-adhd-comparison",
+  companyName: "Final Year Project",
+  type: "Professional",
+  category: ["ML", "Deep Learning", "Data Science"],
   shortDescription:
-    "An online code editor supporting 10+ languages with real-time output, custom input, and a VS Code-inspired interface.",
-  githubLink: "https://github.com/DEVJDR/reactcodeditor",
-  websiteLink: "https://reactcodeditor.vercel.app",
-  techStack: ["React", "Monaco Editor", "Tailwind CSS", "Judge0 API"],
-  startDate: new Date("2024-03-01"),
-  endDate: new Date("2024-04-15"),
-  companyLogoImg: "/projects/runit/logo.png",
+    "Built a deep learning model to compare cognitive patterns in ASD vs ADHD, enhancing diagnostic support.",
+  githubLink: "https://github.com/yourrepo/asd-adhd",
+  techStack: ["Python", "TensorFlow", "Pandas", "Matplotlib"],
+  startDate: new Date("2023-07-01"),
+  endDate: new Date("2024-04-01"),
+  companyLogoImg: "/projects/asd-adhd/logo.jpg",
   pagesInfoArr: [
     {
-      title: "Multi-Language Support",
-      description:
-        "Integrated Judge0 API to compile and execute code in 10+ programming languages directly in the browser.",
-      imgArr: ["/projects/runit/multi_language.png"],
+      title: "Model Training & Evaluation",
+      description: "Implemented CNNs/LSTMs to classify and analyze patterns",
+      imgArr: ["/projects/asd-adhd/model_training.png"],
     },
     {
-      title: "VS Code-Inspired UI",
-      description:
-        "Built an intuitive interface with Monaco Editor, offering syntax highlighting and a familiar coding experience.",
-      imgArr: ["/projects/runit/logo.png"],
+      title: "Data Visualization",
+      description: "Exploratory data analysis and feature distribution graphs",
+      imgArr: ["/projects/asd-adhd/data_viz.png"],
     },
     {
-      title: "Real-Time Execution",
-      description:
-        "Implemented live code execution with input/output panels for smooth and responsive feedback.",
-      imgArr: ["/projects/runit/realtime_output.png"],
+      title: "Results & Accuracy",
+      description: "Achieved significant accuracy in differentiating ASD vs ADHD",
+      imgArr: ["/projects/asd-adhd/results.png"],
     },
   ],
   descriptionDetails: {
     paragraphs: [
-      "RunIt is a lightweight yet powerful online code editor I built to simplify the process of writing and testing code directly in the browser. The goal was to create a tool that provides the feel of an IDE without the need for setup or installation.",
-      "The project supports 10+ programming languages through Judge0 API integration, while Monaco Editor ensures a polished, VS Code-like experience. Real-time output and custom input panels enhance usability for developers and learners alike.",
-      "Building RunIt allowed me to strengthen my expertise in API integration, real-time data handling, and UI/UX design for developer-centric tools.",
+      "For my final year project, I developed a deep learning model aimed at distinguishing between Autism Spectrum Disorder (ASD) and Attention Deficit Hyperactivity Disorder (ADHD). This project combined my interests in psychology and technology to address a real-world healthcare challenge.",
+      "I used Python, TensorFlow, and Keras to design CNN/LSTM models that analyzed behavioral and neurocognitive datasets. The system provided insights into overlapping symptoms and helped in identifying distinguishing markers.",
+      "The project not only improved my expertise in AI/ML but also demonstrated how computational approaches can support mental health diagnostics.",
     ],
     bullets: [
-      "Supports 10+ programming languages with real-time execution.",
-      "Integrated Judge0 API for seamless backend compilation.",
-      "Implemented Monaco Editor for a VS Code-inspired interface.",
-      "Designed responsive UI with Tailwind CSS for accessibility.",
+      "Designed and trained deep learning models for ASD vs ADHD classification.",
+      "Performed extensive data cleaning, preprocessing, and visualization.",
+      "Achieved improved accuracy compared to baseline models.",
+      "Integrated psychology domain knowledge into feature selection and interpretation.",
     ],
   },
 }

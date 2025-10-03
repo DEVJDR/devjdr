@@ -7,6 +7,7 @@ export type ValidSkills =
   | "Node.js"
   | "MongoDB"
   | "Typescript"
+  | "Cloudinary"
   | "Javascript"
   | "HTML 5"
   | "CSS 3"
@@ -75,6 +76,8 @@ export type ValidSkills =
 export type ValidCategory =
   | "Full Stack"
   | "Frontend"
+  | "Training platform"
+  | "Compliance Check"
   | "Backend"
   | "ONDC"
   | "UI/UX"
