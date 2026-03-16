@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-
+import AIAssistant from "@/components/AIAssistant";
 import { AnimatedSection } from "@/components/common/animated-section";
 import { AnimatedText } from "@/components/common/animated-text";
 import { ClientPageWrapper } from "@/components/common/client-page-wrapper";
@@ -20,6 +20,7 @@ import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import profileImg from "@/public/profile-img.jpg";
+import FloatingAIAssistant from "@/components/FloatingAIAssistant";
 
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title} | DEVJDR`,
@@ -102,6 +103,8 @@ export default function IndexPage() {
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
              dev who loves turning ideas into interactive, fast, and beautiful web apps.
             </p>
+              
+ <FloatingAIAssistant />
           </div>
 
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
@@ -195,6 +198,7 @@ export default function IndexPage() {
             </AnimatedSection>
           ))}
         </div>
+      
         <AnimatedText delay={0.4} className="flex justify-center">
           <Link href="/projects">
             <Button variant={"outline"} className="rounded-xl">
